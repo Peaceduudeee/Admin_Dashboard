@@ -57,7 +57,7 @@ body{
 }
 
 .sidebar{
-	background-color: rgb(65, 154, 221);
+	background-color:#1992d4ff;
 	color: white;
 	padding: 10px;
 }
@@ -79,15 +79,93 @@ body{
 	height: 100vh;
 	grid-template-rows: 1fr 3.5fr;
 }
-
+.searchBar{
+	background-color: rgba(234, 234, 237, 0.985);
+	border-radius: 10px;
+	border-style:none;
+	border-color: white;
+	width: 600px;
+	height: 25px;
+	margin-left:10px;
+}
+.headerFirst{
+	display: flex;
+	justify-content: space-between; 
+	flex-shrink:1;
+	margin-left: 40px;
+	padding: 20px;
+	padding-bottom: 5px;
+}
 .content{
 	display: grid;
 	grid-template-columns: 2fr 0.7fr;
 }
+
+.headerFirst .left{
+	display:flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.headerFirst .right{
+	display: flex;
+	align-items: center;
+	gap:20px;
+}
+
+.headerFirst .right .name{
+	font-size: 25px;
+	font-weight: 700;
+}
+
 .dashBoardImage{
 	width: 60px;
 	height:60px;
 }
+
+.headerSecond{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+ 
+.headerSecond .left{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: 20px;
+}
+ 
+.greetings{
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+.nameHandle{
+	font-size:20px;
+	font-weight: 700;
+}
+
+.headerSecond .btn{
+	display: flex;
+	gap: 20px;
+	margin-right: 60px;
+}
+
+.btn button{
+	border-radius: 15px;
+	padding: 10px 25px;
+	background-color:#1992d4ff;
+	font-size: 20px;
+	font-weight: 500px;
+	color: white;
+	border-color: white;
+	border-style:none;
+}
+
+
 
 .sidebar h1{
 	display:flex;
@@ -115,4 +193,8 @@ body{
 }
 .cardContent{
 	font-size:12px;
+}
+.content{
+	background-color: lightcyan;
+	margin-top: 10px;
 }
