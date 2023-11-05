@@ -58,6 +58,8 @@ body{
 
 .sidebar{
 	background-color:#1992d4ff;
+	/* height: auto; */
+	/* overflow-y:scroll; */
 	color: white;
 	padding: 10px;
 }
@@ -96,10 +98,6 @@ body{
 	padding: 20px;
 	padding-bottom: 5px;
 }
-.content{
-	display: grid;
-	grid-template-columns: 2fr 0.7fr;
-}
 
 .header{
 	box-shadow:  -10px 9px 50px 1px #c9c9c9;
@@ -129,6 +127,7 @@ body{
 
 .headerSecond{
 	display: flex;
+	position:sticky;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 20px;
@@ -192,7 +191,8 @@ body{
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	overflow-y: scroll;
+	/* grid-template-rows: 1fr 1fr; */
 	/* margin-left:20px; */
 	padding-left: 20px;
 }
@@ -219,9 +219,57 @@ body{
 }
 .cards h4{
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .cardContent{
 	font-size:12px;
 }
 
+.cardIcons{
+	margin-top: 40px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: end;
+	gap: 10px;	
+}
 
+
+.announcements, .tCardContainer{
+	background-color: white;
+	font-size: 12px;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding: 30px 35px;
+	margin-right: 20px;
+	margin-left: -25px;
+	/* font-weight: 10%; */
+}
+
+.notif h3{
+	font-weight: 700;
+	padding-top:5px;
+	margin-bottom: 2px;
+}
+
+.acards h4{
+	font-weight: 700;
+	font-size: 14px;
+	font-weight: 200px;
+	margin-bottom: 2px;
+}
+.cardText{
+opacity: 40%;
+}
+
+.acards{
+	margin-bottom:10px;
+}
+
+.trending{
+	margin-top: 30px;
+	font-weight: 700;
+}
+.tcards{
+	display: flex;
+	
+}
